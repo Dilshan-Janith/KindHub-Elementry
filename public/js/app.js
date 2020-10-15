@@ -2673,7 +2673,7 @@ __webpack_require__.r(__webpack_exports__);
       $("body").removeClass("modal-open");
       $(".modal-backdrop").remove();
     },
-    deleteStudent: function deleteStudent(id) {
+    deleteTeacher: function deleteTeacher(id) {
       this.form["delete"]("api/teacher/" + id);
       Fire.$emit("AfterCreate");
     }

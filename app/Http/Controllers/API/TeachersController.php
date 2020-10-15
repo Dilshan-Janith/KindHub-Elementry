@@ -122,7 +122,12 @@ class TeachersController extends Controller
      */
     public function destroy($id)
     {
-        Student::findOrFail($id)->delete();
+        Teacher::findOrFail($id)->delete();
+
+        $teacher_class = TeacherClass::where('teacher_id',$id)->get();
+        foreach ($teacher_class as $key => $classes) {
+            $classes->delete();
+        }
 
         return ['message' => 'Teacher deleted Succesfully'];
     }

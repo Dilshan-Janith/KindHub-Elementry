@@ -223,7 +223,7 @@ export default {
       $("body").removeClass("modal-open");
       $(".modal-backdrop").remove();
     },
-    deleteStudent(id) {
+    deleteTeacher(id) {
       this.form.delete("api/teacher/" + id);
       Fire.$emit("AfterCreate");
     },
