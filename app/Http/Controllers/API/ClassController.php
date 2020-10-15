@@ -15,7 +15,7 @@ class ClassController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth:api');
+        // $this->middleware('auth:api');
     }
 
     /**
@@ -82,5 +82,10 @@ class ClassController extends Controller
         ClassRoom::findOrFail($id)->delete();
 
         return ['message' => 'Class deleted Succesfully'];
+    }
+
+    public function Class() {
+        $class = ClassRoom::all();
+        return $class->toArray();
     }
 }

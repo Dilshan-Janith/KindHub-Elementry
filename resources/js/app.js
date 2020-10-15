@@ -25,6 +25,14 @@ let routes = [{
     {
         path: '/class',
         component: require('./components/Class.vue').default
+    },
+    {
+        path: '/student',
+        component: require('./components/Student.vue').default
+    },
+    {
+        path: '/teacher',
+        component: require('./components/Teacher.vue').default
     }
 ];
 

@@ -80,14 +80,14 @@
                             </li>
 
                             <li>
-                                <router-link tag="a" to="/">
+                                <router-link tag="a" to="/student">
                                     <i class="mdi mdi-view-dashboard"></i>
                                     <span> Student </span>
                                 </router-link>
                             </li>
 
                             <li>
-                                <router-link tag="a" to="/">
+                                <router-link tag="a" to="/teacher">
                                     <i class="mdi mdi-view-dashboard"></i>
                                     <span> Teacher </span>
                                 </router-link>

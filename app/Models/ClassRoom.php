@@ -12,4 +12,9 @@ class ClassRoom extends Model
     protected $fillable = [
         'class_name'
     ];
+
+    public function teacher()
+    {
+        return $this->belongsTo(Teacher::class, 'class_id');
+    }
 }

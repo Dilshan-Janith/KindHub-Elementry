@@ -18,4 +18,11 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::apiResources(['class' => 'API\ClassController']);
+Route::apiResources([
+    'class' => 'API\ClassController',
+    'student' => 'API\StudentController',
+    'teacher' => 'API\TeachersController'
+    ]);
+
+Route::get('get_teacher','Api\TeachersController@Teacher');
+Route::get('get_class','Api\ClassController@Class');

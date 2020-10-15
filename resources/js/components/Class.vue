@@ -2,7 +2,7 @@
   <div class="container">
     <div class="card">
       <div class="card-header">
-        <h4 class="card-title mt-0 mb-3">Latest Projects</h4>
+        <h4 class="card-title mt-0 mb-3">Class Rooms</h4>
         <div class="card-tools">
           <button
             class="btn btn-blue"
